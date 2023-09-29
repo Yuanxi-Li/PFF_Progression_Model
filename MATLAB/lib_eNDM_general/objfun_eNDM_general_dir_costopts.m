@@ -3,9 +3,10 @@
 % param(1) = seed rescale factor
 % param(2) = alpha
 % param(3) = beta
-% param(4:(n_types+3)) = a
-% param((n_types+4):(2*n_types+3)) = b
-% param((2*n_types+4):(3*n_types+3)) = p
+% param(4) = s
+% param(5:(n_types+4)) = a
+% param((n_types+5):(2*n_types+4)) = b
+% param((2*n_types+5):(3*n_types+4)) = p
 
 function [f,newxt,newpath] = objfun_eNDM_general_dir_costopts(param,seed_location,...
     pathology,ts,C_,U_,solvetype_,volcorrect_,costfun_,excltpts_costfun_,exclseed_costfun_)
@@ -51,8 +52,6 @@ elseif strcmp(costfun_,'rval_end')
     f = 1 - Rvalues(end);
 elseif strcmp(costfun_,'LinR')
     Rvalues = zeros(1,length(ts));
-%     naninds = isnan(pathology(:,1)); % Yuanxi's Comment: Our dataset has some missing data. It could occur at different MPI. 
-%                                                             % I recommend that here could be revised to 'naninds = isnan(sum(pathology,2));'
     naninds = isnan(prod(pathology,2));
     newxt = y; newxt(naninds,:) = [];
     newpath = pathology; newpath(naninds,:) = [];

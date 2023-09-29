@@ -40,7 +40,7 @@ if size(p,2) > size(p,1)
     p = p.';
 end
 s_p = U * p; 
-Gamma = diag(alpha + s_p); %% Yuanxi's Comment: if s_p is an effect matrix, why not alpha*s_p?
+Gamma = diag(alpha + s_p); 
 
 % Define Laplacian matrix L
 C_dir = (1-s)*C.' + s*C;
@@ -53,16 +53,8 @@ s_b = U * b;
 S_b = repmat(s_b,1,length(s_b)) + ones(length(s_b));
 L = L_raw;
 if logical(volcorrect)
-    % this is the original script
-%         load([cd filesep 'raw_data_mouse' filesep 'regionvoxels.mat'],'voxels'); 
-%         voxels_2hem = cat(1,voxels,voxels)/2; % approximation, splitting over the two hemispheres
-
-    % these are for pff gci data.
-    load([cd filesep 'PFF GCI\DataInput\GCI_PFF_Data.mat' ],'voxels_PFF_GCI'); % 
-    voxels_2hem = voxels_PFF_GCI;
-
-
-
+    load([cd filesep 'raw_data_mouse' filesep 'regionvoxels.mat'],'voxels');
+    voxels_2hem = cat(1,voxels,voxels)/2; % approximation, splitting over the two hemispheres
     L = mean(voxels_2hem) * diag(voxels_2hem.^(-1)) * L; % correction proposed by Putra et al. 2021
 end
 

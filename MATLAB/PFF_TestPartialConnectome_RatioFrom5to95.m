@@ -268,7 +268,7 @@ for Ratio_Num = 1:length(Connectome_Ratio)
                     disp(['Rsqr_adj = ' num2str(outputs.ndm.Full.results.lm_Rsquared_adj)])
                     disp(' ')
                 end
-            else
+            else % bootstrap method by Chaitali Anand et al., Sci.Rep 2022. We don't use it here.
                 rng(0);
                 for i = 1:ipR.niters
                     fldname = sprintf('Iter_%d',i);
@@ -284,8 +284,7 @@ for Ratio_Num = 1:length(Connectome_Ratio)
                     pathology(settonaninds,:) = NaN;
 
                     pathology = normalizer(pathology,ipR.normtype);
-                    %         Yuanxi's Comment: for testing the program
-                    %         pathology = pathology/nansum(pathology(:,1));
+
 
                     if isnan(ipR.param_init(1))
                         ipR.param_init(1) = nansum(pathology(:,1))/nnz(seed_location); % heuristic default, study-dependent
@@ -432,8 +431,6 @@ for Ratio_Num = 1:length(Connectome_Ratio)
                 fprintf('Creating Optimal NDM Model\n');
                 time_stamps = tpts.(ipR.study);
                 pathology = normalizer(data426.(ipR.study),ipR.normtype);
-                % Yuanxi's comment: for testing the program
-                %     pathology = pathology/nansum(pathology(:,1));
 
 
                 seed_location = seed426.(ipR.study);

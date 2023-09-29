@@ -40,7 +40,7 @@ if size(p,2) > size(p,1)
     p = p.';
 end
 s_p = U * p; 
-Gamma = diag(alpha + s_p); %% Yuanxi's Comment: if s_p is an effect matrix, why not alpha*s_p?
+Gamma = diag(alpha + s_p); 
 
 % Define Laplacian matrix L
 C_dir = (1-s)*C.' + s*C;

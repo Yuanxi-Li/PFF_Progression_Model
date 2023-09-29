@@ -1,11 +1,6 @@
 % Objective function for eNDM_general
-%
-% param(1) = seed rescale factor
-% param(2) = alpha
-% param(3) = beta
-% param(4:(n_types+3)) = a
-% param((n_types+4):(2*n_types+3)) = b
-% param((2*n_types+4):(3*n_types+3)) = p
+% Fit for individual mouse
+
 
 function [f,newxt,newpath] = objfun_eNDM_general_dir_costopts_individual(param,seed_location,...
     pathology,ts,C_,U_,solvetype_,volcorrect_,costfun_,excltpts_costfun_,exclseed_costfun_)

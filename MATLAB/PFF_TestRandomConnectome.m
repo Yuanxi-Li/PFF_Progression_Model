@@ -243,7 +243,7 @@ for BootstrapNum = 1:1000 % Bootstrap for 1,000 times. Randomly generate 1,000 m
                 disp(['Rsqr_adj = ' num2str(outputs.ndm.Full.results.lm_Rsquared_adj)])
                 disp(' ')
             end
-        else
+        else % bootstrap method by Chaitali Anand et al., Sci.Rep 2022. We don't use it here.
             rng(0);
             for i = 1:ipR.niters
                 fldname = sprintf('Iter_%d',i);
