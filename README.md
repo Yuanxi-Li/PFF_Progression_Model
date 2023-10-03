@@ -1,12 +1,12 @@
-# PFF_Progression_Model: Mathematical models for PFF Progression
-_Yuanxi Li, et al., Pathological α-synuclein spreading is predominantly determined by key subnetworks of connectome and risk genes associated with pathology spread._  
+# PFF_Progression_Model  
+**Mathematical models for PFF Progression**  
+**_Yuanxi Li, et al., Pathological α-synuclein spreading is predominantly determined by key subnetworks of connectome and risk genes associated with pathology spread._**  
 
 Matlab was used for modeling and fitting, Python was used for visualizing figures.
 
 ## Modeling and fitting
 **I. Global spread model (without gene expression effect), Fig. 2**  
-We used _Nexis:global_ [1] as the global spread model to investigate the pathological progression including the amplification, clearance, and spreading of pathological α-Syn. To accommodate a continuous measure of net directional preference, the original _Nexis:global_ [1] was augmented by introducing a new parameter, s, to indicate transmission direction.  
-  
+We used _Nexis:global_ [1] as the global spread model to investigate the pathological progression including the amplification, clearance, and spreading of pathological α-Syn. To accommodate a continuous measure of net directional preference, the original _Nexis:global_ [1] was augmented by introducing a new parameter, s, to indicate transmission direction.    
 **Run in Matlab:** PFF_Global = PFF_GlobalModel;  
   
 **Result Description:**   
