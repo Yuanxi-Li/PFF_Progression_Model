@@ -7,6 +7,7 @@ Matlab was used for modeling and fitting, Python was used for visualizing figure
 We used _Nexis:global_ [1] as the global spread model to investigate the pathological progression including the amplification, clearance, and spreading of pathological α-Syn. To accommodate a continuous measure of net directional preference, the original _Nexis:global_ [1] was augmented by introducing a new parameter, s, to indicate transmission direction.  
   
 **Run global spread model in Matlab:** PFF_Global = PFF_GlobalModel;  
+  
 **Result Description:**   
 data - pathology distribution observed in IHC experiments  
 time_stamps - MPI information  
