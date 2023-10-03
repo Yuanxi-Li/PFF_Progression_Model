@@ -5,7 +5,7 @@
 ## Model fitting:
 
 ### 1. Global spread model (without gene expression effect)
-We augmented original Nexis:global[^1] 
+We augmented original Nexis:global [^1] 
 
 
 
