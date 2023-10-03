@@ -3,16 +3,16 @@ Matlab was used for modeling and fitting, Python was used for visualizing figure
 
 ## Model fitting:
 
-**I. Global spread model (without gene expression effect)**
-We used _Nexis:global_ [1] as the global spread model to investigate the pathological progression including the amplification, clearance, and spreading of pathological α-Syn. To accommodate a continuous measure of net directional preference, the original _Nexis:global_ [1] was augmented by introducing a new parameter, s, to indicate transmission direction.
+**I. Global spread model (without gene expression effect)**  
+We used _Nexis:global_ [1] as the global spread model to investigate the pathological progression including the amplification, clearance, and spreading of pathological α-Syn. To accommodate a continuous measure of net directional preference, the original _Nexis:global_ [1] was augmented by introducing a new parameter, s, to indicate transmission direction.  
 
-Run global spread model in Matlab: **PFF_Global = PFF_GlobalModel;**
-Result description: 
-data - pathology distribution observed in IHC experiments
-time_stamps - MPI information
-predicted - pathology distribution predicted by the model
-param_fit - parameters after fitting: 1, seed scale; 2, amplification/clearance; 3, spreading effect; 4, directionality; 5-7, not fit.
-results - data_means, average of data; Corrs, Pearson's correlation coefficient between predicted and real pathology over each MPIs; Corrs_Mean, average of Corrs; LogCorrs, Pearson's correlation coefficient between log10(predicted) and log10(real pathology) over each MPIs; LogCorrs_Mean, average of LogCorrs; LinR, Lin's concordance correlation coefficients [2] between predicted and real pathology over each MPIs; LinR_Mean, average of LinR; New_R_Log, we defined a new loss function, not using here; LogLinR, Lin's concordance correlation coefficients [2] between log10(predicted) and log10(real pathology) over each MPIs; LogLinR_Mean, average of LogLinR; sse_individual, sum of squared errors measured by predicted and real pathology data over each MPIs; sse_all, average of sse_individual; 
+Run global spread model in Matlab: **PFF_Global = PFF_GlobalModel;**  
+Result description:   
+data - pathology distribution observed in IHC experiments  
+time_stamps - MPI information  
+predicted - pathology distribution predicted by the model  
+param_fit - parameters after fitting: 1, seed scale; 2, amplification/clearance; 3, spreading effect; 4, directionality; 5-7, not fit.  
+results - data_means, average of data; Corrs, Pearson's correlation coefficient between predicted and real pathology over each MPIs; Corrs_Mean, average of Corrs; LogCorrs, Pearson's correlation coefficient between log10(predicted) and log10(real pathology) over each MPIs; LogCorrs_Mean, average of LogCorrs; LinR, Lin's concordance correlation coefficients [2] between predicted and real pathology over each MPIs; LinR_Mean, average of LinR; New_R_Log, we defined a new loss function, not using here; LogLinR, Lin's concordance correlation coefficients [2] between log10(predicted) and log10(real pathology) over each MPIs; LogLinR_Mean, average of LogLinR; sse_individual, sum of squared errors measured by predicted and real pathology data over each MPIs; sse_all, average of sse_individual;   
 
 
 
