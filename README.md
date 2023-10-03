@@ -59,6 +59,6 @@ TestGenes_Combined_BootstrapFor500th = PFF_TestGenes_Combined_BootstrapFor500th;
 **Comparisons of pathology distribution between 3 and 6 MPI, Fig. S2**  
 **Run in Matlab:** GetDifferencePValue.mlx  
 
-## References:  
+## References  
 [1] Anand, C., P.D. Maia, J. Torok, C. Mezias, and A. Raj. 2022. The effects of microglia on tauopathy progression can be quantified using Nexopathy in silico (Nex is) models. Scientific Reports 12:21170.  
 [2] Lawrence, I., and K. Lin. 1989. A concordance correlation coefficient to evaluate reproducibility. Biometrics 255-268.
