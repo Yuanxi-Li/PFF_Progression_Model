@@ -6,7 +6,7 @@ Matlab was used for modeling and fitting, Python was used for visualizing figure
 **I. Global spread model (without gene expression effect), Fig. 2**  
 We used _Nexis:global_ [1] as the global spread model to investigate the pathological progression including the amplification, clearance, and spreading of pathological α-Syn. To accommodate a continuous measure of net directional preference, the original _Nexis:global_ [1] was augmented by introducing a new parameter, s, to indicate transmission direction.  
   
-**Run global spread model in Matlab:** PFF_Global = PFF_GlobalModel; 
+**Run global spread model in Matlab:** PFF_Global = PFF_GlobalModel;  
 **Result Description:**   
 data - pathology distribution observed in IHC experiments  
 time_stamps - MPI information  
@@ -33,6 +33,21 @@ We removed different proportions of the strongest or weakest connections from th
 **Run in Matlab:**  
 TestPartialConnectome_RemoveWeakest = PFF_TestPartialConnectome_RemoveWeakest; (Fig. 3E)  
 TestPartialConnectome_RemoveStrongest = PFF_TestPartialConnectome_RemoveStrongest; (Fig. 3F)  
+****
+**VI. Gene models of outgoing, incoming, and combined effects, Fig. 4**  
+See **Methods** for details.  
+**Run in Matlab:**  
+TestGenes_Outgoing = PFF_TestGenes_Outgoing;  
+TestGenes_Incoming = PFF_TestGenes_Incoming;  
+TestGenes_Combined = PFF_TestGenes_Combined;  
+****
+
+**VII. Robustness test for 500th-ranked-gene for outgoing, incoming, and combined effects, Fig. 6A, Fig. S14**  
+In order to ensure that these genes all had robust performance in predicting the spread of pathological α-Syn, we conducted bootstrap analyses for each group’s 500th gene (500th-ranked-gene for the outgoing, incoming, and combined effects were Large, Socs6, and Tbc1d14, respectively) by randomly permuting the elements of the gene expression values for 1,000 times.  
+**Run in Matlab:**  
+TestGenes_Outgoing_BootstrapFor500th = PFF_TestGenes_Outgoing_BootstrapFor500th;  
+TestGenes_Incoming_BootstrapFor500th = PFF_TestGenes_Incoming_BootstrapFor500th;  
+TestGenes_Combined_BootstrapFor500th = PFF_TestGenes_Combined_BootstrapFor500th;  
 ****
 
 
