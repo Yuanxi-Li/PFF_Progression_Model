@@ -44,7 +44,7 @@ TestGenes_Incoming = PFF_TestGenes_Incoming;
 TestGenes_Combined = PFF_TestGenes_Combined;  
 ****
 **VII. Robustness test for 500th-ranked-gene for outgoing, incoming, and combined effects, Fig. 6A, Fig. S14**  
-In order to ensure that these genes all had robust performance in predicting the spread of pathological α-Syn, we conducted bootstrap analyses for each group’s 500th gene (500th-ranked-gene for the outgoing, incoming, and combined effects were Large, Socs6, and Tbc1d14, respectively) by randomly permuting the elements of the gene expression values for 1,000 times.  
+In order to ensure that these genes all had robust performance in predicting the spread of pathological α-Syn, we conducted bootstrap analyses for each group’s 500th gene (500th-ranked-gene for the outgoing, incoming, and combined effects were _Large_, _Socs6_, and _Tbc1d14_, respectively) by randomly permuting the elements of the gene expression values for 1,000 times.  
 **Run in Matlab:**  
 TestGenes_Outgoing_BootstrapFor500th = PFF_TestGenes_Outgoing_BootstrapFor500th;  
 TestGenes_Incoming_BootstrapFor500th = PFF_TestGenes_Incoming_BootstrapFor500th;  
@@ -58,6 +58,6 @@ TestGenes_Combined_BootstrapFor500th = PFF_TestGenes_Combined_BootstrapFor500th;
 **Comparisons of pathology distribution between 3 and 6 MPI, Fig. S2**  
 **Run in Matlab:** GetDifferencePValue.mlx  
 
-References:  
+## References:  
 [1] Anand, C., P.D. Maia, J. Torok, C. Mezias, and A. Raj. 2022. The effects of microglia on tauopathy progression can be quantified using Nexopathy in silico (Nex is) models. Scientific Reports 12:21170.  
 [2] Lawrence, I., and K. Lin. 1989. A concordance correlation coefficient to evaluate reproducibility. Biometrics 255-268.
