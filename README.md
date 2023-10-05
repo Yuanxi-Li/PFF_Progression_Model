@@ -4,6 +4,7 @@
 **_Yuanxi Li, et al., Pathological α-synuclein spreading is predominantly determined by key subnetworks of connectome and risk genes associated with pathology spread._**  
 
 Matlab was used for modeling and fitting, Python was used for visualizing figures.  
+****
 **Matlab: R2021b**  
   
 **Python: 3.9.11**  
