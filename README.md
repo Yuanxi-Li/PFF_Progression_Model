@@ -1,7 +1,7 @@
 # PFF_Progression_Model  
 **Mathematical models for PFF Progression**  
   
-**_Yuanxi Li, et al., Pathological α-synuclein spreading is predominantly determined by key subnetworks of connectome and risk genes associated with pathology spread._**  
+**_Yuanxi Li, et al., Key Connectomes and Synaptic‐Compartment‐Specific Risk Genes Drive Pathological α‐Synuclein Spreading. Accepted by Advanced Scince, 2025._**  
 
 Matlab was used for modeling and fitting, Python was used for visualizing figures.  
 ****
