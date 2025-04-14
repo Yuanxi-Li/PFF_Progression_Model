@@ -1,9 +1,8 @@
 # PFF_Progression_Model  
 **Mathematical models for PFF Progression**  
   
-**_
-Please cite: Y. Li, J. Torok, S. Zhang, J. Ding, N. Wang, C. Lau, S. Kulkarni, C. Anand, J. Tran, M. Cheng, C. Lo, B. Lu, Y. Sun, R. Damoiseaux, X. Yang, A. Raj, C. Peng, Key Connectomes and Synaptic‐Compartment‐Specific Risk Genes Drive Pathological α‐Synuclein Spreading. Adv. Sci. 2025, 2413052. https://doi.org/10.1002/advs.202413052
-_**  
+**Please cite:**  
+Y. Li, J. Torok, S. Zhang, J. Ding, N. Wang, C. Lau, S. Kulkarni, C. Anand, J. Tran, M. Cheng, C. Lo, B. Lu, Y. Sun, R. Damoiseaux, X. Yang, A. Raj, C. Peng. *Key Connectomes and Synaptic‐Compartment‐Specific Risk Genes Drive Pathological α‐Synuclein Spreading*. **Advanced Science**, 2025, 2413052. [https://doi.org/10.1002/advs.202413052](https://doi.org/10.1002/advs.202413052)
 
 Matlab was used for modeling and fitting, Python was used for visualizing figures.  
 ****
